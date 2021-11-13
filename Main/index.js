@@ -1,29 +1,30 @@
-const manager = require("./lib/manager");
-const engineer = require("./lib/engineer");
-const intern = require("./lib/intern");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
+const path = require("path");
 
 const mangerquestions = () => {
   inquirer //general prompt
     .prompt([
       {
         type: "input",
-        message: "What is your user name?",
+        message: "What is your managers name?",
         name: "username",
       },
       {
         type: "input",
-        message: "What is your id?",
+        message: "What is your id number?",
         name: "id",
       },
       {
         type: "input",
-        message: "What is your email?:",
+        message: "What is your managers email address?:",
         name: "email",
       },
       {
         type: "input",
-        message: "What is your user office Number?",
+        message: "What is your managers office Number?",
         name: "officeNum",
       },
     ])
@@ -35,22 +36,22 @@ const internQuestions = () => {
     .prompt([
       {
         type: "input",
-        message: "What is your user name?",
+        message: "What is your name?",
         name: "username",
       },
       {
         type: "input",
-        message: "What is your id?",
+        message: "What is your id number?",
         name: "id",
       },
       {
         type: "input",
-        message: "What is your email?:",
+        message: "What is your email address?:",
         name: "email",
       },
       {
         type: "input",
-        message: "What is your user school?",
+        message: "What is the name of your school?",
         name: "school",
       },
     ])
