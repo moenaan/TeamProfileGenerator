@@ -3,6 +3,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
+const fs = require("fs");
 
 const mangerquestions = () => {
   inquirer //general prompt
@@ -30,6 +31,33 @@ const mangerquestions = () => {
     ])
     .then((response) => (response.confirm === response.password ? console.log("Success!") : console.log("You forgot your password already?!")));
 };
+
+const engineerquestions = () => {
+    inquirer //general prompt
+      .prompt([
+        {
+          type: "input",
+          message: "What is your name?",
+          name: "username",
+        },
+        {
+          type: "input",
+          message: "What is your id number?",
+          name: "id",
+        },
+        {
+          type: "input",
+          message: "What is your email address?:",
+          name: "email",
+        },
+        {
+          type: "input",
+          message: "What is your github username?",
+          name: "githubusername",
+        },
+      ])
+      .then((response) => (response.confirm === response.password ? console.log("Success!") : console.log("You forgot your password already?!")));
+  };
 
 const internQuestions = () => {
   inquirer //general prompt
