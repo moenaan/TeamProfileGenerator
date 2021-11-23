@@ -1,8 +1,50 @@
-# TeamProfileGenerator
-Node operated team profile generator. 
+# Team profile generator
+![GitHub license](https://img.shields.io/badge/license-undefined-blue.svg)
 
-when there is input node index.js, user will be shown a prompt to add information on a new employee. The user can choose from manager, intern and engineer. The intern will have a school prompt, the manager will have office number prompt and engineer will have github user name prompt.
+## Description
 
-when completed an html page will be created to display all the profiles. 
+An applications used to generate a team profile
+
+## Table of Contents 
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
+
+## Installation
+
+To install necessary dependencies, run the following command:
+
+Install node.js on computer 
+
+## Usage
+
+After installation, application can be used to generate a team
+
+## License
+
+This project is licensed under the undefined license.
+  
+## Contributing
+
+Mohammed Samod
+
+## Tests
+
+To run tests, run the following command:
+
+Run aopplicaion with differnt inputs to test
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at mohammedlee27@gmail.com. You can find more of my work at [moenaan](https://github.com/moenaan/). 
 
 https://watch.screencastify.com/v/pwRLnVJqCDgLTelVntto

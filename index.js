@@ -8,7 +8,7 @@ const fs = require("fs");
 const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-// const render = require("./src/page-template.js");
+const render = require("./src/page-template.js");
 
 const teamMembers = [];
 const idArray = [];
@@ -16,7 +16,7 @@ const idArray = [];
 function appMenu() {
 
   function createManager() {
-    console.log("Create your team");
+    console.log("Please build your team");
     inquirer.prompt([
       {
         type: "input",
